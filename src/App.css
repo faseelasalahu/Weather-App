@@ -1,0 +1,76 @@
+.App{
+  text-align: center;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(135deg, #00b4db, #0083b0);
+  min-height: 100vh;
+  color: white;
+}
+
+input{
+  width:50%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: antiquewhite;
+  background-image: linear-gradient(to right,#7dbfd1,#04617a);
+  margin-left: 120px;
+}
+button{
+  width:130px;
+  height: 63px;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius:50%;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  background-color:#6e8c96;
+}
+
+.weather-card{
+  background: rgba(255, 255, 255, 0.15); /* glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease-in-out;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+  
+
+.cardtitle {
+  color:#032a40;
+}
+.text{
+  font-size: 18px;
+}
+i{
+  font-size: 25px;
+  color: #032a40;
+}
+
+@media(max-width:480px){
+  .App{
+     padding: 10px;
+    align-items: flex-start;
+    padding-top: 50px;
+  }
+  input{
+   
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
